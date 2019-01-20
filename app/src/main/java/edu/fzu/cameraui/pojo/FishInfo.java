@@ -4,16 +4,16 @@ import java.util.Date;
 
 public class FishInfo {
     private Date date;
-    private int poolId;
-    private int feedQuantity1;
-    private int feedQuantity2;
-    private int feedQuantity3;
-    private int feedQuantity4;
-    private int waterQuantity;
-    private float phAM;
-    private float phPM;
-    private int nh4n;
-    private int nano2;
+    private String poolId;
+    private String feedQuantity1;
+    private String feedQuantity2;
+    private String feedQuantity3;
+    private String feedQuantity4;
+    private String waterQuantity;
+    private String phAM;
+    private String phPM;
+    private String nh4n;
+    private String nano2;
     private String MedicationRecord;
 
     public Date getDate() {
@@ -24,83 +24,83 @@ public class FishInfo {
         this.date = date;
     }
 
-    public int getPoolId() {
+    public String getPoolId() {
         return poolId;
     }
 
-    public void setPoolId(int poolId) {
+    public void setPoolId(String poolId) {
         this.poolId = poolId;
     }
 
-    public int getFeedQuantity1() {
+    public String getFeedQuantity1() {
         return feedQuantity1;
     }
 
-    public void setFeedQuantity1(int feedQuantity1) {
+    public void setFeedQuantity1(String feedQuantity1) {
         this.feedQuantity1 = feedQuantity1;
     }
 
-    public int getFeedQuantity2() {
+    public String getFeedQuantity2() {
         return feedQuantity2;
     }
 
-    public void setFeedQuantity2(int feedQuantity2) {
+    public void setFeedQuantity2(String feedQuantity2) {
         this.feedQuantity2 = feedQuantity2;
     }
 
-    public int getFeedQuantity3() {
+    public String getFeedQuantity3() {
         return feedQuantity3;
     }
 
-    public void setFeedQuantity3(int feedQuantity3) {
+    public void setFeedQuantity3(String feedQuantity3) {
         this.feedQuantity3 = feedQuantity3;
     }
 
-    public int getFeedQuantity4() {
+    public String getFeedQuantity4() {
         return feedQuantity4;
     }
 
-    public void setFeedQuantity4(int feedQuantity4) {
+    public void setFeedQuantity4(String feedQuantity4) {
         this.feedQuantity4 = feedQuantity4;
     }
 
-    public int getWaterQuantity() {
+    public String getWaterQuantity() {
         return waterQuantity;
     }
 
-    public void setWaterQuantity(int waterQuantity) {
+    public void setWaterQuantity(String waterQuantity) {
         this.waterQuantity = waterQuantity;
     }
 
-    public float getPhAM() {
+    public String getPhAM() {
         return phAM;
     }
 
-    public void setPhAM(float phAM) {
+    public void setPhAM(String phAM) {
         this.phAM = phAM;
     }
 
-    public float getPhPM() {
+    public String getPhPM() {
         return phPM;
     }
 
-    public void setPhPM(float phPM) {
+    public void setPhPM(String phPM) {
         this.phPM = phPM;
     }
 
-    public int getNh4n() {
+    public String getNh4n() {
         return nh4n;
     }
 
-    public void setNh4n(int nh4n) {
+    public void setNh4n(String nh4n) {
         this.nh4n = nh4n;
     }
 
-    public int getNano2() {
+    public String getNano2() {
         return nano2;
     }
 
-    public void setNano2(int nano2) {
+    public void setNano2(String nano2) {
         this.nano2 = nano2;
     }
 

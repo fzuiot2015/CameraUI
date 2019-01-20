@@ -5,4 +5,29 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/test_btn_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="界面1" />
+
+        <Button
+            android:id="@+id/test_btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="界面2" />
+
+
+        <Button
+            android:id="@+id/test_btn_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="界面3" />
+    </LinearLayout>
+
+
 </android.support.constraint.ConstraintLayout>

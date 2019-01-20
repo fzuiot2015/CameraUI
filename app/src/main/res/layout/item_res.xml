@@ -2,13 +2,13 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="180dp"
-    android:background="@drawable/card_border"
+    android:layout_height="350dp"
+    android:background="@drawable/card_res"
     android:orientation="horizontal">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="0dp"
         android:layout_marginRight="12dp"
@@ -17,59 +17,189 @@
         android:orientation="vertical"
         android:paddingBottom="14dp">
 
-        <TextView
-            android:id="@+id/res_pool_id"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1号池塘" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/res_feed_quantity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="投料量:" />
+            <EditText
+                android:id="@+id/res_pool_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:text="1" />
 
-        <TextView
-            android:id="@+id/res_water_quantity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="换水量:" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:text="号池塘"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/res_ph"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PH值:" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/res_nh4n"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="氨氮:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投料量:"
+                android:textSize="18dp" />
 
-        <TextView
-            android:id="@+id/res_nano2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="亚硝酸盐:" />
+            <EditText
+                android:id="@+id/res_feed_quantity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="12" />
 
-        <TextView
-            android:id="@+id/res_medication_record"
-            android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/res_feed_quantity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="12" />
+
+            <EditText
+                android:id="@+id/res_feed_quantity3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="12" />
+
+            <EditText
+                android:id="@+id/res_feed_quantity4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="用药记录:" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="换水量:"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/res_water_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PH值:上午: "
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/res_ph_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 下午: "
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/res_ph_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="氨氮:"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/res_nh4n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="亚硝酸盐:"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/res_nano2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用药记录:"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/res_medication_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="光合菌调水" />
+        </LinearLayout>
+
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/res_btn_delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
+            android:layout_margin="6dp"
             android:background="@drawable/button_red"
             android:text="删除"
             android:textColor="#fff"
@@ -79,7 +209,7 @@
             android:id="@+id/res_btn_modify"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
+            android:layout_margin="6dp"
             android:background="@drawable/button_bule"
             android:text="修正"
             android:textColor="#fff"
@@ -89,7 +219,7 @@
             android:id="@+id/res_btn_ok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
+            android:layout_margin="6dp"
             android:background="@drawable/button_green"
             android:text="确认"
             android:textColor="#fff"
